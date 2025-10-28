@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="Free_Logo_Maker___Create_Your_Logo_in_5_Minutes-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="_-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    .font-nunito-sans {
+      font-family: "Nunito Sans", sans-serif;
+    }
+
+    .nuni {
+      font-family: "Nunito Sans", sans-serif;
+    }
+
+    .birmud {
+      background-color: #bddde4;
+    }
+
+    .birtu {
+      background-color: #9fb3df;
+    }
+  </style>
+  <body>
+    <nav
+      class="sticky top-0 z-50 bg-[#9FB3DF] backdrop-blur border-b border-slate-300"
+      aria-label="primary"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- buat menu laptop -->
+        <div class="flex items-center justify-between h-16">
+          <a
+            href="#"
+            class="flex items-center text-white text-xl font-nunito-sans uppercase tracking-wider font-semibold"
+          >
+            paus
+          </a>
+
+          <button
+            id="hamburger"
+            class="md:hidden ml-auto mb-2 p-2 rounded hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left"
+            >
+              <a
+                href="#aboutMe"
+                class="px-3 py-2 text-[#F5BABB] hover:text-[#5e1a1b] uppercase font-nunito-sans font-bold"
+                >About Me</a
+              >
+              <div
+                class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left"
+              >
+                <a
+                  href="#whatIDo"
+                  class="px-3 py-2 text-[#F5BABB] hover:text-[#5e1a1b] uppercase font-nunito-sans font-bold"
+                  >what i do</a
+                >
+              </div>
+              <div
+                class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left"
+              >
+                <a
+                  href="#portfolio"
+                  class="px-3 py-2 text-[#F5BABB] hover:text-[#5e1a1b] uppercase font-nunito-sans font-bold"
+                  >portfolio</a
+                >
+              </div>
+              <div
+                class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left"
+              >
+                <a
+                  href="#mySkill"
+                  class="px-3 py-2 text-[#F5BABB] hover:text-[#5e1a1b] uppercase font-nunito-sans font-bold"
+                  >skills</a
+                >
+              </div>
+              <div
+                class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left"
+              >
+                <a
+                  href="#myBlog"
+                  class="px-3 py-2 text-[#F5BABB] hover:text-[#5e1a1b] uppercase font-nunito-sans font-bold"
+                  >blog</a
+                >
+              </div>
+              <a
+                href="#contactMe"
+                class="bg-[#9647ce] hover:bg-[#e0b8fc] rounded-xl px-4 py-2 font-nunito-sans font-bold text-white justify-center items-center"
+                >contact i</a
+              >
+            </div>
+          </div>
+          <div
+            id="mobile-panel"
+            class="md:hidden borde-t border-[#1B3C53] py-2"
+          >
+            <a
+              href="#"
+              class="block px-3 py-2 text-[#456882] hover:text-[#8babc3] uppercase font-nunito-sans"
+            ></a>
+            <a
+              href="#"
+              class="block px-3 py-2 text-[#456882] hover:text-[#8babc3] uppercase font-nunito-sans"
+            ></a>
+            <a
+              href="#"
+              class="block px-3 py-2 text-[#456882] hover:text-[#8babc3] uppercase font-nunito-sans"
+            ></a>
+            <a
+              href="#"
+              class="block px-3 py-2 text-[#456882] hover:text-[#8babc3] uppercase font-nunito-sans"
+            ></a>
+            <a
+              href="#"
+              class="block text-[#456882] hover:text-[#8babc3] uppercase font-nunito-sans rounded-xl px-4 py-2 font-bold"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- about me -->
+    <section id="aboutMe" class="bg-[#9EC6F3]">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div
+          class="order-2 lg:order-2 border-[12px] sm:border-[16px] border-[#BDDDE4] rounded-2xl shadow-2xl overflow-hidden"
+        >
+          <img
+            class="w-full object-cover"
+            src="╰┈➤ ariel _ aesthetic _ the little mermaid _ disney.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="order-1 lg:order">
+          <h1 class="font-nunito-sans text-5xl font-bold leading-tight">
+            Hello, I'm <span class="text-blue-700">Paus</span>
+          </h1>
+          <h2 class="font-nunito-sans text-3xl font-semibold text-gray-400">
+            web / mobile developer
+          </h2>
+          <p class="mt-5 leading-relaxed text-white nuni">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            veniam minima dolorum accusamus quas voluptate eius rerum cumque
+            omnis
+          </p>
+
+          <div class="mt-6 items-center gap-4 flex flex-wrap">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg birtu hover:bg-white text-white px-4 py-3"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg birtu hover:bg-white text-white px-4 py-3"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg birtu hover:bg-white text-white px-4 py-3"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-lg birtu hover:bg-white text-white px-4 py-3"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- what i do -->
+
+    <section id="whatIDo" class="bg-[#8EACCD]">
+      <div class="max-x-7xl mx-auto px-4 md:px-8 py-20 border-t border-white">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-bold text-white underline underline-offset-8 decoration-[#295F98] uppercase tracking-widest"
+          >
+            What I Do
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl birmud shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid place-items-center rounded-full bg-[#8EACCD] items-center"
+              >
+                <i class="fa-solid fa-computer"></i>
+              </div>
+              <h3 class="text-white nuni font-bold text-lg tracking-wider">
+                Web Design
+              </h3>
+            </div>
+            <p class="text-white nuni">
+              I create responsite and visually appealing websites that provide
+            </p>
+          </div>
+          <div class="rounded-xl birmud shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid place-items-center rounded-full bg-[#8EACCD] items-center"
+              >
+                <i class="fa-solid fa-camera"></i>
+              </div>
+              <h3 class="text-white nuni font-bold text-lg tracking-wider">
+                App Design
+              </h3>
+            </div>
+            <p class="text-white nuni">
+              I create responsite and visually appealing websites that provide
+            </p>
+          </div>
+
+          <div class="rounded-xl birmud shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid place-items-center rounded-full bg-[#8EACCD] items-center"
+              >
+                <i class="fa-solid fa-earth-asia"></i>
+              </div>
+              <h3 class="text-white nuni font-bold text-lg tracking-wider">
+                Branding
+              </h3>
+            </div>
+            <p class="text-white nuni">
+              I create responsite and visually appealing websites that provide
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portofolio -->
+    <section id="portfolio">
+      <section id="portofolio" class="bg-[#8EACCD]">
+        <div class="max-x-7xl mx-auto px-4 md:px-8 py-20 border-t border-white">
+          <div class="text-center mb-12">
+            <h2
+              class="text-3xl font-bold text-white underline underline-offset-8 decoration-[#295F98] uppercase tracking-widest"
+            >
+              Portofolio
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <a
+              href="https://i.pinimg.com/736x/1e/0f/98/1e0f9812dd085bab28afc83de874551d.jpg"
+              class="rounded-xl birmud shadow-2xl p-6"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <img src="lgi (1).jpg" alt="" />
+              </div>
+              <h3 class="text-white nuni font-bold text-lg tracking-wider">
+                Website with React JS
+              </h3>
+              <p class="text-white nuni">
+                Membuat website menggunakan React JS
+              </p>
+            </a>
+            <a
+              href="https://i.pinimg.com/1200x/0c/5e/7c/0c5e7c4b722fbbf281ec94b5b2f3ee79.jpg"
+              class="rounded-xl birmud shadow-2xl p-6"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <img src="gmbrnya (2).jpg" alt="" />
+              </div>
+              <h3 class="text-white nuni font-bold text-lg tracking-wider">
+                Website with React JS
+              </h3>
+              <p class="text-white nuni">
+                Membuat website menggunakan React JS
+              </p>
+            </a>
+
+            <a
+              href="https://i.pinimg.com/1200x/0c/5e/7c/0c5e7c4b722fbbf281ec94b5b2f3ee79.jpg"
+              class="rounded-xl birmud shadow-2xl p-6"
+            >
+              <div class="flex items-center gap-3 mb-3">
+                <img src="lgi (2).jpg" alt="" />
+              </div>
+              <h3 class="text-white nuni font-bold text-lg tracking-wider">
+                Website with React JS
+              </h3>
+              <p class="text-white nuni">
+                Membuat website menggunakan React JS
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- my skill -->
+    <section id="mySkill" class="bg-[#8EACCD]">
+      <div class="max-x-7xl mx-auto px-4 md:px-8 py-20 border-t border-white">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-bold text-white underline underline-offset-8 decoration-[#295F98] uppercase tracking-widest"
+          >
+            my skills
+          </h2>
+        </div>
+        <div class="mb-3">
+          <h3 class="font-bold text-white text-2xl mb-1">Web Developer</h3>
+          <p class="text-white">Saya memiliki Skill seperti berikut</p>
+        </div>
+        <div class="grid flex-wrap grid-cols-4 leading-1.5 gap-1.5">
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto rounded-[3px]"
+              src="pra gmbr/adobe-illustrator.png"
+              alt=""
+            />
+          </div>
+
+          <!-- dua -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto rounded-[3px]"
+              src="pra gmbr/ps.jpg"
+              alt=""
+            />
+          </div>
+
+          <!-- tiga -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto"
+              src="pra gmbr/HTML5_Badge_512.png"
+              alt=""
+            />
+          </div>
+
+          <!-- 4 -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto rounded-[3px]"
+              src="pra gmbr/js_logo.png"
+              alt=""
+            />
+          </div>
+
+          <!-- 5 -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto rounded-[3px]"
+              src="pra gmbr/adobe xd.png"
+              alt=""
+            />
+          </div>
+
+          <!-- 6 -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto"
+              src="pra gmbr/blender-removebg-preview.png"
+              alt=""
+            />
+          </div>
+
+          <!-- 7 -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img
+              class="h-12 mr-auto ml-auto"
+              src="pra gmbr/gtw-removebg-preview.png"
+              alt=""
+            />
+          </div>
+
+          <!-- 8 -->
+          <div class="rounded-xl birmud shadow-2xl p-2">
+            <img class="h-12 mr-auto ml-auto" src="pra gmbr/figma.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- my blog -->
+    <section id="myBlog" class="bg-[#8EACCD]">
+      <div class="max-x-7xl mx-auto px-4 md:px-8 py-20 border-t border-white">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-bold text-white underline underline-offset-8 decoration-[#295F98] uppercase tracking-widest"
+          >
+            my blog
+          </h2>
+        </div>
+        <div class="grid flex-wrap grid-cols-3 gap-3">
+          <div class="birmud p-[20px] rounded-2xl shadow-2xl">
+            <div class="flex gap-[10px] text-white">
+              <div class="leading-[30px] text-center font-bold">
+                <p>Aug</p>
+                <hr class="w-[30px]" />
+                <p>24</p>
+              </div>
+              <div>
+                <p class="uppercase text-[#154D71] font-bold text-[11px]">
+                  jane doe
+                </p>
+                <h4 class="font-bold text-2xl">Review Jasa Website</h4>
+                <p class="mb-1.5 mt-1.5">Jasanya bagus, good job dan cepat</p>
+                <a href="#" class="text-[#154D71] text-[11px]">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="birmud p-[20px] rounded-2xl shadow-2xl">
+            <div class="flex gap-[10px] text-white">
+              <div class="leading-[30px] text-center font-bold">
+                <p>Aug</p>
+                <hr class="w-[30px]" />
+                <p>25</p>
+              </div>
+              <div>
+                <p class="uppercase text-[#154D71] font-bold text-[11px]">
+                  kim jennie
+                </p>
+                <h4 class="font-bold text-2xl">Review Jasa Website</h4>
+                <p class="mb-1.5 mt-1.5">Jasanya bagus, good job dan cepat</p>
+                <a href="#" class="text-[#154D71] text-[11px]">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="birmud p-[20px] rounded-2xl shadow-2xl">
+            <div class="flex gap-[10px] text-white">
+              <div class="leading-[30px] text-center font-bold">
+                <p>Aug</p>
+                <hr class="w-[30px]" />
+                <p>26</p>
+              </div>
+              <div>
+                <p class="uppercase text-[#154D71] font-bold text-[11px]">
+                  jaymin
+                </p>
+                <h4 class="font-bold text-2xl">Review Jasa Website</h4>
+                <p class="mb-1.5 mt-1.5">Jasanya bagus, good job dan cepat</p>
+                <a href="#" class="text-[#154D71] text-[11px]">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- contact me -->
+    <section id="contactMe" class="bg-[#8EACCD]">
+      <div class="max-x-7xl mx-auto px-4 md:px-8 py-20 border-t border-white">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-bold text-white underline underline-offset-8 decoration-[#295F98] uppercase tracking-widest mb-[10px]"
+          >
+            contact me
+          </h2>
+          <p class="uppercase text-white text-[15px]">
+            hubungi kamk jika ingin bekerja sama
+          </p>
+        </div>
+        <div
+          class="birmud pl-[100px] pr-[100px] pt-[50px] pb-[50px] rounded-2xl shadow-2xl"
+        >
+          <div class="grid grid-cols-2 gap-2.5 mb-[30px]">
+            <div>
+              <p class="uppercase text-white">Name</p>
+              <input type="text" class="w-[100%] rounded-[3px]" />
+            </div>
+            <div>
+              <p class="uppercase text-white">Email</p>
+              <input type="text" class="w-[100%] rounded-[3px]" />
+            </div>
+          </div>
+          <div>
+            <p class="uppercase text-white">message</p>
+            <input
+              type="text"
+              class="w-[100%] h-[100px] mb-[30px] rounded-[3px]"
+            />
+          </div>
+          <button>
+            <a
+              href=""
+              class="p-[15px] text-white rounded-2xl hover:bg-[#92e7ff] shadow-1xl bg-[#40899e]"
+              >Send Message</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#9EC6F3] pt-[30px]">
+      <div class="grid grid-cols-2">
+        <div class="">
+          <h2
+            class="uppercase text-white text-[50px] font-bold text-center mb-[10px]"
+          >
+            end portofolio
+          </h2>
+          <div
+            class="text-white text-[20px] text-center tracking-[30px] mb-[100px]"
+          >
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="">
+            <p class="uppercase text-center text-white mb-[50px]">thank you</p>
+          </div>
+        </div>
+        <div class="m-auto">
+          <h1 class="uppercase text-white text-[20px] font-bold mb-[20px]">
+            the menu
+          </h1>
+          <div class="flex gap-[10px] mb-[30px]">
+            <a
+              href="#aboutMe"
+              class="text-white hover:underline decoration-white"
+            >
+              About me</a
+            >
+            <a
+              href="#whatIDo"
+              class="text-white hover:underline decoration-white"
+            >
+              What i do
+            </a>
+            <a
+              href="#portfolio"
+              class="text-white hover:underline decoration-white"
+            >
+              Portfolio</a
+            >
+            <a
+              href="#mySkill"
+              class="text-white hover:underline decoration-white"
+            >
+              My skill</a
+            >
+            <a
+              href="#myBlog"
+              class="text-white hover:underline decoration-white"
+            >
+              My Blog</a
+            >
+            <a
+              href="#contactMe"
+              class="text-white hover:underline decoration-white"
+            >
+              Contact Me</a
+            >
+          </div>
+          <div class="ml-[100px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21660.28951011984!2d107.05868849703845!3d-6.513483550145272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bd1922806599%3A0xe211e32674878760!2sBendung%20Cipamingkis%2C%20Jonggol!5e0!3m2!1sid!2sid!4v1756963857864!5m2!1sid!2sid"
+              width="200"
+              height="100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
